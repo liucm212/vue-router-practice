@@ -1,7 +1,9 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <!-- 傳送物件binding到to -->
+    <router-link :to="{name : '饒特'}">Router</router-link>
   </nav>
   <router-view/>
 </template>
