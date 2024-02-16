@@ -1,15 +1,9 @@
 <template>
-  <h1>Router Page</h1>
-  <HelloWorld></HelloWorld>
+  <h1 class="mt-3 text-center text-6xl font-bold">Router Page</h1>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'RoutherView',
-  components: {
-    HelloWorld
-  }
+  name: 'RoutherView'
 }
 </script>
