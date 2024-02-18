@@ -34,6 +34,8 @@
             <slot name="nav1xl"></slot>
             <slot name="nav2xl"></slot>
             <slot name="nav3xl"></slot>
+            <slot name="nav4xl"></slot>
+            <slot name="nav5xl"></slot>
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <!-- <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
             <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
@@ -70,6 +72,8 @@
         <slot name="nav1"></slot>
         <slot name="nav2"></slot>
         <slot name="nav3"></slot>
+        <slot name="nav4"></slot>
+        <slot name="nav5"></slot>
       </div>
     </div>
   </nav>

@@ -1,5 +1,6 @@
 <template>
   <NavComponent>
+    <!-- big screen -->
     <template #nav1xl>
       <router-link to="/" class=" text-white rounded-md px-3 py-2 text-sm font-medium">Home</router-link>
     </template>
@@ -10,6 +11,16 @@
       <!-- 傳送物件binding到to -->
       <router-link :to="{name : '饒特'}" class=" text-white rounded-md px-3 py-2 text-sm font-medium">Router</router-link>
     </template>
+    <template #nav4xl>
+      <!-- 傳送物件binding到to -->
+      <router-link to="/sidebar" class=" text-white rounded-md px-3 py-2 text-sm font-medium">Sidebar</router-link>
+    </template>
+    <template #nav5xl>
+      <!-- 傳送物件binding到to -->
+      <router-link to="/dynamicRouter/123456789" class=" text-white rounded-md px-3 py-2 text-sm font-medium">dynamicRouter</router-link>
+    </template>
+
+    <!-- normal screen -->
     <template #nav1>
       <router-link to="/" class=" text-white block rounded-md px-3 py-2 text-base font-medium">Home</router-link>
     </template>
@@ -19,6 +30,14 @@
     <template #nav3>
       <!-- 傳送物件binding到to -->
       <router-link :to="{name : '饒特'}" class=" text-white block rounded-md px-3 py-2 text-base font-medium">Router</router-link>
+    </template>
+    <template #nav4>
+      <!-- 傳送物件binding到to -->
+      <router-link to="/sidebar" class=" text-white rounded-md px-3 py-2 text-sm font-medium">Sidebar</router-link>
+    </template>
+    <template #nav5>
+      <!-- 傳送物件binding到to -->
+      <router-link to="/dynamicRouter/123456789" class=" text-white rounded-md px-3 py-2 text-sm font-medium">dynamicRouter</router-link>
     </template>
   </NavComponent>
   <router-view/>

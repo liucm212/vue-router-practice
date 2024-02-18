@@ -59,8 +59,28 @@ const routes = [
             }
           }
         ]
+      },
+      {
+        path: 'routerMethods',
+        component: () => import('../components/RouterMethods.vue')
       }
     ]
+  },
+  {
+    path: '/dynamicRouter/:seed',
+    component: () => import('../components/DynamicRouter.vue')
+  },
+  {
+    // 404 not found ：全站
+    path: '/:pathMatch(.*)*',
+    component: () => import('../views/404NotFound')
+  },
+  {
+    // 404 not found ：指定/sidebar內找不到就去讓router指向'/home'
+    path: '/sidebar/:pathMatch(.*)*',
+    redirect: {
+      name: 'home'
+    }
   }
 ]
 
