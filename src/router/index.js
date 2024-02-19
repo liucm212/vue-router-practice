@@ -86,7 +86,14 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  // 連結被點選後會被添加'active'的class
+  linkActiveClass: 'active',
+  scrollBehavior (to, from, savePosition) {
+    return {
+      top: 0
+    }
+  }
 })
 
 export default router

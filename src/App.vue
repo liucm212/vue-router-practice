@@ -33,11 +33,11 @@
     </template>
     <template #nav4>
       <!-- 傳送物件binding到to -->
-      <router-link to="/sidebar" class=" text-white rounded-md px-3 py-2 text-sm font-medium">Sidebar</router-link>
+      <router-link to="/sidebar" class=" text-white block rounded-md px-3 py-2 text-base font-medium">Sidebar</router-link>
     </template>
     <template #nav5>
       <!-- 傳送物件binding到to -->
-      <router-link to="/dynamicRouter/123456789" class=" text-white rounded-md px-3 py-2 text-sm font-medium">dynamicRouter</router-link>
+      <router-link to="/dynamicRouter/123456789" class=" text-white block rounded-md px-3 py-2 text-base font-medium">dynamicRouter</router-link>
     </template>
   </NavComponent>
   <router-view/>
